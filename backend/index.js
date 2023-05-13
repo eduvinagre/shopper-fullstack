@@ -10,6 +10,8 @@ const db = mysql.createConnection({
   database: "shopper",
 });
 
+app.use(express.json());
+
 app.get("/", (req, res) => {
   res.json("hello this is the backend");
 });
@@ -22,6 +24,21 @@ app.get("/shopper", (req, res) => {
       return res.json(err);
     }
     return res.json(data);
+  });
+});
+
+app.post("/shopper", (req, res) => {
+  const q =
+    "INSERT INTO shopper.current_products (`product_name`,`product_code`,`product_price`,`img`) VALUES (?)";
+  const values = [
+    req.body.product_name,
+    req.body.product_code,
+    req.body.product_price,
+    req.body.img,
+  ];
+  db.query(q, [values], (err, data) => {
+    if (err) return res.json(err);
+    return res.json("Produtos foram criados");
   });
 });
 
