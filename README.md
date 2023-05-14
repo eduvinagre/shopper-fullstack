@@ -27,3 +27,5 @@
 # Instalação do Axios "npm i axios" permite chamar api usando o react
 
 # Instalação da lib cors
+
+# Instalação lib para leitura de arquivo .csv "npm i papaparse"
