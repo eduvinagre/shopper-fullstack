@@ -24,4 +24,6 @@
 
 # Instalação do React router DOM "npm i react-router-dom"
 
-# Instalação do Axios "npm i axios"
+# Instalação do Axios "npm i axios" permite chamar api usando o react
+
+# Instalação da lib cors
