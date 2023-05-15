@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/shopper", (req, res) => {
-  const q = "SELECT * FROM shopper.current_products;";
+  const q = "SELECT * FROM shopper.products, shopper.packs;";
   db.query(q, (err, data) => {
     if (err) {
       console.log(err);
@@ -31,16 +31,31 @@ app.get("/shopper", (req, res) => {
 
 app.post("/shopper", (req, res) => {
   const q =
-    "INSERT INTO shopper.current_products (`product_name`,`product_code`,`product_price`,`img`) VALUES (?)";
+    "INSERT INTO shopper.products (`product_code`,`name`,`cost_price`,`sales_price`, `new_price`) VALUES (?)";
   const values = [
-    req.body.product_name,
-    req.body.product_code,
-    req.body.product_price,
-    req.body.img,
+    req.body.code,
+    req.body.name,
+    req.body.cost_price,
+    req.body.sales_price,
   ];
   db.query(q, [values], (err, data) => {
     if (err) return res.json(err);
     return res.json("Produtos foram criados");
+  });
+});
+
+app.post("/shopper", (req, res) => {
+  const q =
+    "INSERT INTO shopper.packs (`id`,`pack_id`,`product_id`,`qty`) VALUES (?)";
+  const values = [
+    req.body.id,
+    req.body.pack_id,
+    req.body.product_id,
+    req.body.qty,
+  ];
+  db.query(q, [values], (err, data) => {
+    if (err) return res.json(err);
+    return res.json("Packs foram criados");
   });
 });
 

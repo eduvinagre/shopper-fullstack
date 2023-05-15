@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Papa from "papaparse";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Add = () => {
   // State to store parsed data
@@ -10,6 +12,8 @@ const Add = () => {
 
   //State to store the values
   const [values, setValues] = useState([]);
+
+  const navigate = useNavigate();
 
   const leArquivo = (e) => {
     Papa.parse(e.target.files[0], {
@@ -35,6 +39,16 @@ const Add = () => {
         setValues(valuesArray);
       },
     });
+  };
+
+  const validaArquivo = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("http://localhost:8800/shopper", values);
+      navigate("/");
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (
@@ -64,6 +78,8 @@ const Add = () => {
           })}
         </tbody>
       </table>
+      <br />
+      <button onClick={validaArquivo}>Validar Arquivo</button>
     </div>
   );
 };
