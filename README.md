@@ -37,6 +37,6 @@ Instalação lib para leitura de arquivo .csv `npm i papaparse`
 
 </details>
 
-# Desafios encontrados
+## Desafios encontrados
 
 Como desenvolvedor me senti inspirado em realizar o projeto. Entretanto, devido ao curto tempo não consegui completar os modelos de negócio do backend. De toda forma já pude aprender muito com este projeto e vou procurar desafios ainda maiores independentemente da conquista da vaga. Agradeço a oportunidade de ter conseguido chegar até aqui e mesmo que incompleto acredito que meu projeto tem códigos bem feitos e pude mostrar capacidade de completar o projeto, que só não se deu, como disse, pelo tempo esguio.
