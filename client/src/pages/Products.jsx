@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
-  const [packs, setPacks] = useState([]);
 
   useEffect(() => {
     const fetchAllProducts = async () => {
@@ -16,18 +15,6 @@ const Products = () => {
       }
     };
     fetchAllProducts();
-  }, []);
-
-  useEffect(() => {
-    const fetchAllPacks = async () => {
-      try {
-        const res = await axios.get("http://localhost:8800/shopper");
-        setPacks(res.data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    fetchAllPacks();
   }, []);
 
   return (
