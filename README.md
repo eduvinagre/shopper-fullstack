@@ -1,31 +1,42 @@
-# shopper-fullstack
+# Shopper Fullstack test
 
-# Instalação MySQL;
+Este projeto foi feito a partir de um teste técnico, onde foram passadas regras de negócio e uma db pré-configurada.
 
-# Instalação MySQL Workbench;
+## Para instalação
 
-# Criação de uma tabela de referência
+Para instalação do projeto é preciso ter configurado na máquina
 
-# Criação das pastas backend e client
+1. My SQL
+2. MY SQL Workbench 8
+3. Importar a o arquivo de db dentro de uma schema chamada shopper
+4. Faço clone do respositório
+5. Instale as dependências
+<details>
 
-# Instalações backend = package.json (npm init -y)
+Package.json `bash npm init -y`
 
-# Instalações backend = express mySQL e nodemon (npm i express mysql nodemon)
+Express mySQL e Nodemon `bash npm i express mysql nodemon`
 
-# Run App (atualize o package.json com "type": "module" e após node index.js)
+Atualize o package.json com `bash "type": "module"` e após dê o comando `bash node index.js`
 
-# Atualizar o package.json para que a conexão se refaça automaticamente. Em scripts: "start": "nodemon index.js"
+Atualizar o package.json para que a conexão se refaça automaticamente. Em scripts: `bash "start": "nodemon index.js"`
 
-# Utilização do app postman para verificar o funcionamento da API"
+Baixe o aplicativo postman para verificar a comunicação com a API
 
-# Instalação React na pasta cliente execute "npx creat-react-app ."
+Instalação React na pasta cliente execute `bash npx creat-react-app`
 
-# Servidor de desenvolvimento "npm start"
+Servidor de desenvolvimento `bash npm start`
 
-# Instalação do React router DOM "npm i react-router-dom"
+Instalação do React router DOM `bash npm i react-router-dom`
 
-# Instalação do Axios "npm i axios" permite chamar api usando o react
+Instalação do Axios `bash npm i axios` permite chamar api usando o react
 
-# Instalação da lib cors
+Instalação da lib cors `bash npm i cors`
 
-# Instalação lib para leitura de arquivo .csv "npm i papaparse"
+Instalação lib para leitura de arquivo .csv `bash npm i papaparse`
+
+</details>
+
+# Desafios encontrados
+
+Como desenvolvedor me senti inspirado em realizar o projeto. Entretanto, devido ao curto tempo não consegui completar os modelos de negócio do backend. De toda forma já pude aprender muito com este projeto e vou procurar desafios ainda maiores independentemente da conquista da vaga. Agradeço a oportunidade de ter conseguido chegar até aqui e mesmo que incompleto acredito que meu projeto tem códigos bem feitos e pude mostrar capacidade de completar o projeto, que só não se deu, como disse, pelo tempo esguio.
