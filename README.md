@@ -13,27 +13,27 @@ Para instalação do projeto é preciso ter configurado na máquina
 5. Instale as dependências
 <details>
 
-Package.json `bash npm init -y`
+Package.json `npm init -y`
 
-Express mySQL e Nodemon `bash npm i express mysql nodemon`
+Express mySQL e Nodemon `npm i express mysql nodemon`
 
-Atualize o package.json com `bash "type": "module"` e após dê o comando `bash node index.js`
+Atualize o package.json com `"type": "module"` e após dê o comando `node index.js`
 
-Atualizar o package.json para que a conexão se refaça automaticamente. Em scripts: `bash "start": "nodemon index.js"`
+Atualizar o package.json para que a conexão se refaça automaticamente. Em scripts: `"start": "nodemon index.js"`
 
 Baixe o aplicativo postman para verificar a comunicação com a API
 
-Instalação React na pasta cliente execute `bash npx creat-react-app`
+Instalação React na pasta cliente execute `npx creat-react-app`
 
-Servidor de desenvolvimento `bash npm start`
+Servidor de desenvolvimento `npm start`
 
-Instalação do React router DOM `bash npm i react-router-dom`
+Instalação do React router DOM `npm i react-router-dom`
 
-Instalação do Axios `bash npm i axios` permite chamar api usando o react
+Instalação do Axios `npm i axios` permite chamar api usando o react
 
-Instalação da lib cors `bash npm i cors`
+Instalação da lib cors `npm i cors`
 
-Instalação lib para leitura de arquivo .csv `bash npm i papaparse`
+Instalação lib para leitura de arquivo .csv `npm i papaparse`
 
 </details>
 
