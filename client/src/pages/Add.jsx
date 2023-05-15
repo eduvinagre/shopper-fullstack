@@ -44,7 +44,7 @@ const Add = () => {
   const validaArquivo = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8800/shopper", values);
+      await axios.post("http://localhost:8800/shopper", parsedData);
       navigate("/");
     } catch (err) {
       console.log(err);
