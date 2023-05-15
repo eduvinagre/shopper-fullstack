@@ -53,9 +53,17 @@ const Add = () => {
 
   return (
     <div className="form">
-      <h1>Adicionar Novo Preço de Produto</h1>
-      <input type="file" name="file" accept=".csv" onChange={leArquivo} />
-      <br />
+      <h1>Shopper</h1>
+      <h2>Adicionar Novo Preço de Produto</h2>
+      <div className="chooseFile">
+        <input
+          className="input"
+          type="file"
+          name="file"
+          accept=".csv"
+          onChange={leArquivo}
+        />
+      </div>
       <br />
       {/* Table */}
       <table>

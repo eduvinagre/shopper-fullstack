@@ -32,32 +32,24 @@ const Products = () => {
 
   return (
     <div>
-      <h1>Produtos Shopper</h1>
+      <h1>Shopper</h1>
+      <h2>Produtos Shopper</h2>
       <div className="products">
         {products.map((product) => (
           <div className="product" key={product.code}>
             <h2>{product.name}</h2>
-            <p>{product.product_code}</p>
-            <p>R$ {product.cost_price}</p>
-            <p>R$ {product.sales_price}</p>
-            <p>R$ {product.new_price}</p>
+            <p>Código do Produto: {product.product_code}</p>
+            <p>Preço de Custo: R$ {product.cost_price}</p>
+            <p>Preço de Venda: R$ {product.sales_price}</p>
+            <p>Novo Preço: R$ {product.new_price}</p>
           </div>
         ))}
       </div>
-      <h1>Packs Shopper</h1>
-      <div className="packs">
-        {packs.map((pack) => (
-          <div className="pack" key={pack.id}>
-            <h2>{pack.id}</h2>
-            <p>{pack.pack_id}</p>
-            <p>{pack.product_id}</p>
-            <p>{pack.qty}</p>
-          </div>
-        ))}
+      <div className="btnAdd">
+        <button>
+          <Link to="/add">Adicionar Novo Preço</Link>
+        </button>
       </div>
-      <button>
-        <Link to="/add">Adicionar Novo Preço</Link>
-      </button>
     </div>
   );
 };

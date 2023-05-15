@@ -1,5 +1,4 @@
 .App {
-  height: 100vh;
   padding: 0 100px;
   display: flex;
   align-items: center;
@@ -8,32 +7,54 @@
 }
 
 .products {
+  justify-content: space-between;
   display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  max-width: 100%;
 }
 
 .product {
-  flex: 1;
   display: flex;
+  max-width: 25%;
+  flex-flow: wrap;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  font-size: 1rem;
-}
-
-.packs {
-  display: flex;
-}
-
-.pack {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.5rem;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.chooseFile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  display: flex;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
