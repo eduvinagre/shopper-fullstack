@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/shopper", (req, res) => {
-  const q = "SELECT * FROM shopper.products, shopper.packs;";
+  const q = "SELECT * FROM products";
   db.query(q, (err, data) => {
     if (err) {
       console.log(err);
