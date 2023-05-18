@@ -53,7 +53,7 @@ const Add = () => {
 
   return (
     <div className="form">
-      <h1>Shopper</h1>
+      <h1></h1>
       <h2>Adicionar Novo Preço de Produto</h2>
       <div className="chooseFile">
         <input
